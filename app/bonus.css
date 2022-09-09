@@ -1,0 +1,160 @@
+.bonus_container{
+    position: relative;
+    display: none;
+    margin: 3rem auto 0.25rem auto;
+    width: 38.65rem;
+    height: 27.875rem;
+
+}
+
+.bonus_container::before{
+    background-image: url('../images/bg-pentagon.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 18%;
+    left: 27%;
+    height: 70%;
+    width: 53%;
+    z-index: -1;
+}
+
+.scissors-bonus_btn{
+    position: absolute;
+    top: -5%;
+    left: 37%;
+    grid-area: sci;
+    justify-self: center;
+}
+
+.spock-bonus_btn{
+    position: absolute;
+    top: 24%;
+    left: 10%;
+    grid-area: spock;
+}
+
+.paper-bonus_btn {
+	position: absolute;
+	top: 24%;
+	left: 65%;
+	grid-area: paper;
+	justify-self: end;
+}
+
+.lizard-bonus_btn{
+    position: absolute;
+    top: 65%;
+    left: 20%;
+    grid-area: lizard;
+    justify-self: center;
+}
+
+.rock-bonus_btn{
+    position: absolute;
+    top: 65%;
+    left: 55%;
+    grid-area: rock;
+    justify-self: center;
+}
+
+@media (max-width: 47.9375rem) and (min-width: 23.4375rem){
+    .bonus_container {
+        margin: 5.9375rem auto 7.875rem auto;
+        max-width: 47.9375rem;
+        width: 19.4375rem;
+        height: 19.0625rem;
+    }
+
+
+
+    .bonus_container::before {
+        left: 3.3rem;
+        height: 14.1875rem;
+        width: 14.1875rem;
+    }
+
+    .scissors-bonus_btn {
+        top: -6.5%;
+        left: 33.4%;
+    }
+
+    .spock-bonus_btn {
+        top: 26.3%;
+        left: -4%;
+    }
+
+    .paper-bonus_btn {
+        top: 26.3%;
+        left: 69.8%;
+    }
+
+    .lizard-bonus_btn {
+        top: 71%;
+        left: 10%;
+    }
+
+    .rock-bonus_btn {
+        top: 71.1%;
+        left: 55%;
+    }
+}
+
+@media (max-width: 64rem) and (min-width: 48rem){
+    .bonus_container {
+        margin: 3rem auto 0.25rem auto;
+        height: 28.9375rem;
+        max-width: 48rem;
+    }
+
+    .scissors-bonus_btn {
+        top: -3%;
+        left: 42%;
+    }
+
+    .spock-bonus_btn {
+        top: 24%;
+        left: 15%;
+    }
+
+    .paper-bonus_btn {
+        top: 24%;
+        left: 70%;
+    }
+
+    .lizard-bonus_btn {
+        top: 65%;
+        left: 25%;
+    }
+    .rock-bonus_btn {
+        top: 65%;
+        left: 60%;
+    }
+
+    .bonus_container::before {
+        left: 31%;
+
+    }
+    
+}
+
+@media (max-width: 120rem) and (min-width: 64.0625rem){
+    .bonus_container::before {
+        left: 27%;
+
+    }
+    
+}
+
+
+
+.scissors-bonus_btn,
+.spock-bonus_btn,
+.paper-bonus_btn,
+.lizard-bonus_btn,
+.rock-bonus_btn{
+    scale: 0.8;
+} 
+
+

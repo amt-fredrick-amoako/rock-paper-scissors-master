@@ -1,0 +1,204 @@
+/* .results{
+    position: relative;
+    margin: 4rem auto 0.25rem auto;
+    align-items: center;
+    width: 58.625rem;
+    height: 24.6875rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
+
+.results{
+    position: relative;
+    margin: 4rem auto 0.25rem auto;
+    align-items: center;
+    width: 58.625rem;
+    height: 24.6875rem;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "user decision house";
+    justify-content: space-between;
+    align-items: center;
+}
+
+.results .btn{
+    scale: 1.2;
+}
+
+.results div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 18.3125rem;
+}
+
+.results h2{
+    margin: 0 0 3.9375rem 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 3px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+}
+
+
+.you-win{
+    font-weight: 700;
+    font-size: 3.5rem;
+    line-height: 4.1875rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    margin: 0 0 1rem;
+}
+
+.reset{
+    border: none;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: #3B4262;
+    width: 13.75rem;
+    height: 3rem;
+    text-transform: uppercase;
+    align-self: center;
+    background: linear-gradient(
+        0deg, #F3F3F3 0%, #FFFFFF 100%);
+    box-shadow: 0px 3px 3px rgba(
+        0, 0, 0, 0.196706);
+    border-radius: 8px;
+}
+
+@media (max-width: 47.9375rem) and (min-width: 23.4375rem){
+    .results{
+        position: relative;
+        margin: 4rem auto 0.25rem auto;
+        align-items: center;
+        max-width: 58.625rem;
+        width: 20.3125rem;
+        height: 24.6875rem;
+        display: none;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+            "button1 button2"
+            "reset reset";
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .play-again{
+        grid-area: reset;
+        justify-self: center;
+    }
+
+    .you{
+        grid-area: button1;
+        justify-self: start;
+    }
+
+    .house{
+        grid-area: button2;
+        justify-self: end;
+    }
+
+    .results div {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        width: 10.0rem;
+    }
+
+    .results .btn{
+        scale: none;
+    }
+
+    .results .play-again{
+        flex-direction: column;
+    }
+
+    .results h2 {
+        margin: 1.0625rem 0 0 0;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 0.75rem;
+        line-height: 2rem;
+        text-align: center;
+        letter-spacing: 0.1171875rem;
+        color: #fff;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+    }
+
+    .you-win {
+        font-weight: 700;
+        font-size: 2.2rem;
+        line-height: 4.1875rem;
+        text-align: center;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        text-shadow: 0px 3px 3px rgba(0, 0, 0, 0.196706);
+        margin: 0 0 1rem;
+    }
+}
+
+@media (max-width: 64rem) and (min-width: 48rem){
+    /* .results{
+        position: relative;
+        margin: 4rem auto 0.25rem auto;
+        align-items: center;
+        max-width: 48rem;
+        width: 48rem;
+        height: 24.6875rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    } */
+
+    .results{
+        position: relative;
+        margin: 4rem auto 0.25rem auto;
+        align-items: center;
+        max-width: 48rem;
+        width: 48rem;
+        height: 24.6875rem;
+        display: none;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "user decision house";
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .play-again{
+        grid-area: decision;
+        justify-self: center;
+    }
+
+    .you{
+        grid-area: user;
+        justify-self: start;
+    }
+
+    .house{
+        grid-area: house;
+        justify-self: end;
+    }
+
+    .results div {
+        display: flex;
+        width: 16rem;
+    }
+
+    .results .btn{
+        scale: none;
+    }
+
+    .results h2 {
+        font-size: 1.25rem;
+
+    }
+}

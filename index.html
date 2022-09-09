@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="app/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  <script type="module" src="main_js/main.js" defer></script>
+</head>
+
+<body>
+
+  <header>
+    <div class="score-board header-container">
+
+      <a href="#">
+        <img id="logo" src="images/logo.svg" alt="logo" class="logo">
+        <img id="bonus-logo" src="images/logo-bonus.svg" alt="logo" class="bonus-logo">
+      </a>
+
+      <div class="score-container">
+        <p class="score-text">score</p>
+        <p id="score" class="score">0</p>
+      </div>
+
+    </div>
+  </header>
+  <section>
+
+    <div id="game" class="buttons-container">
+
+      <button class="btn paper-btn select" data-choice="paper">
+        <span class="wrapper">
+          <img src="images/icon-paper.svg" alt="Paper">
+        </span>
+      </button>
+
+      <button class="btn scissors-btn select" data-choice="scissors">
+        <span class="wrapper">
+          <img src="images/icon-scissors.svg" alt="Scissors">
+        </span>
+      </button>
+
+      <button class="btn rock-btn select" data-choice="rock">
+        <span class="wrapper">
+          <img src="images/icon-rock.svg" alt="Rock">
+        </span>
+      </button>
+
+    </div>
+
+    <div id="bonus" class="bonus_container">
+
+      <button class="btn scissors-btn select scissors-bonus_btn" data-choice="scissors">
+        <span class="wrapper">
+          <img src="images/icon-scissors.svg" alt="Paper">
+        </span>
+      </button>
+
+      <button class="btn spock-btn select spock-bonus_btn" data-choice="spock">
+        <span class="wrapper">
+          <img src="images/icon-spock.svg" alt="Scissors">
+        </span>
+      </button>
+
+      <button class="btn paper-btn select paper-bonus_btn" data-choice="paper">
+        <span class="wrapper">
+          <img src="images/icon-paper.svg" alt="Rock">
+        </span>
+      </button>
+
+      <button class="btn lizard-btn select lizard-bonus_btn" data-choice="lizard">
+        <span class="wrapper">
+          <img src="images/icon-lizard.svg" alt="Rock">
+        </span>
+      </button>
+
+      <button class="btn rock-btn select rock-bonus_btn" data-choice="rock">
+        <span class="wrapper">
+          <img src="images/icon-rock.svg" alt="Rock">
+        </span>
+      </button>
+
+    </div>
+    
+
+    <div id="start" class="results">
+      <div class="you">
+        <h2>You picked</h2>
+        <button id="user-result" class="btn rock-btn user-choice">
+          <span class="wrapper">
+            <img id="user-pick" src="images/icon-rock.svg" alt="Rock">
+          </span>
+        </button>
+      </div>
+      <div class="play-again">
+        <p class="you-win">You<span id="show-result"> win</span></p>
+        <button id="reset" class="reset">Play Again</button>
+      </div>
+      <div class="house">
+        <h2>The house picked</h2>
+        <button id="house-result" class="btn rock-btn computer-choice">
+          <span class="wrapper">
+            <img id="computer-pick" src="images/icon-rock.svg" alt="Rock">
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <button class="rules">rules</button>
+    
+    <div class="modal-bg"></div>
+    </div>
+    <div class="modal">
+      <span class="close">
+        <img src="/images/icon-close.svg" alt="">
+      </span>
+      <div class="title"><h4>Rules</h4></div>
+      <div class="content">
+        <img id="how-to-play" src="/images/image-rules.svg" alt="">
+      </div>
+    </div>
+
+  </section>
+
+</body>
+
+</html>

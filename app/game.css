@@ -1,0 +1,62 @@
+
+
+.buttons-container{
+    position: relative;
+    margin: 4rem auto 0.25rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 29.75rem;
+    height: 26.875rem;
+}
+
+
+
+.buttons-container::before{
+    background-image: url('../images/bg-triangle.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 20%;
+    left: 14%;
+    height: 70%;
+    width: 70%;
+    z-index: -1;
+}
+
+
+.btn{
+    box-shadow: 
+        inset 0px -6px 0px 2px rgb(0 0 0 / 20%);
+    width: 12.5rem;
+    height: 12.5rem;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:last-child{
+    margin: auto;
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.btn:active{
+    scale: 0.9;
+}
+
+.btn .wrapper{
+    box-shadow: 
+    inset 0px 6px 0px 2px rgb(0 0 0 / 20%);
+    display: inline-flex;
+    width: 9.375rem;
+    height: 9.375rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 50%;
+}
