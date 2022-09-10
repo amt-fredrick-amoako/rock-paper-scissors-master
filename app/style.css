@@ -281,9 +281,10 @@ header a{
     .modal .close {
         /* margin-top: 38px; */
         position: absolute;
-        left: 196px;
+        left: 185px;
         cursor: pointer;
-        top: 750px;
+        top: 600px;
+        margin: 0;
     }
 
     .title h4{

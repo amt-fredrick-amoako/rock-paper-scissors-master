@@ -1,13 +1,15 @@
-.bonus_container{
-    position: relative;
-    display: none;
-    margin: 3rem auto 0.25rem auto;
-    width: 38.65rem;
-    height: 27.875rem;
-
+.bonus_container {
+	background-image: url('../images/bg-pentagon.svg');
+	background-repeat: no-repeat;
+	background-size: contain;
+	position: relative;
+	display: none;
+	margin: 7.6875rem auto 0.25rem auto;
+	width: 345px;
+	height: 345px;
 }
 
-.bonus_container::before{
+/* .bonus_container::before{
     background-image: url('../images/bg-pentagon.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,48 +20,48 @@
     height: 70%;
     width: 53%;
     z-index: -1;
-}
+} */
 
-.scissors-bonus_btn{
+.scissors-bonus_btn {
     position: absolute;
-    top: -5%;
-    left: 37%;
+    top: -100px;
+    left: 66px;
     grid-area: sci;
     justify-self: center;
 }
 
-.spock-bonus_btn{
+.spock-bonus_btn {
     position: absolute;
-    top: 24%;
-    left: 10%;
+    top: 28px;
+    left: -93px;
     grid-area: spock;
 }
 
 .paper-bonus_btn {
-	position: absolute;
-	top: 24%;
-	left: 65%;
-	grid-area: paper;
-	justify-self: end;
+    position: absolute;
+    top: 28px;
+    left: 231px;
+    grid-area: paper;
+    justify-self: end;
 }
 
-.lizard-bonus_btn{
+.lizard-bonus_btn {
     position: absolute;
-    top: 65%;
-    left: 20%;
+    top: 212px;
+    left: -32px;
     grid-area: lizard;
     justify-self: center;
 }
 
-.rock-bonus_btn{
+.rock-bonus_btn {
     position: absolute;
-    top: 65%;
-    left: 55%;
+    top: 212px;
+    left: 168px;
     grid-area: rock;
     justify-self: center;
 }
 
-@media (max-width: 47.9375rem) and (min-width: 23.4375rem){
+/* @media (max-width: 47.9375rem) and (min-width: 23.4375rem){
     .bonus_container {
         margin: 5.9375rem auto 7.875rem auto;
         max-width: 47.9375rem;
@@ -99,53 +101,158 @@
         top: 71.1%;
         left: 55%;
     }
-}
+} */
 
-@media (max-width: 64rem) and (min-width: 48rem){
+@media screen and (min-width: 23.4375rem) {
     .bonus_container {
-        margin: 3rem auto 0.25rem auto;
-        height: 28.9375rem;
-        max-width: 48rem;
+        background-image: url('../images/bg-pentagon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: none;
+        margin: 9.0625rem auto 0.25rem auto;
+        width: 227px;
+        height: 227px;
     }
 
     .scissors-bonus_btn {
-        top: -3%;
-        left: 42%;
+        position: absolute;
+        top: -75px;
+        left: 47px;
+        grid-area: sci;
+        justify-self: center;
     }
-
     .spock-bonus_btn {
-        top: 24%;
-        left: 15%;
+        position: absolute;
+        top: 22px;
+        left: -70px;
+        grid-area: spock;
     }
-
     .paper-bonus_btn {
-        top: 24%;
-        left: 70%;
+        position: absolute;
+        top: 22px;
+        left: 168px;
+        grid-area: paper;
+        justify-self: end;
     }
-
     .lizard-bonus_btn {
-        top: 65%;
-        left: 25%;
+        position: absolute;
+        top: 159px;
+        left: -22px;
+        grid-area: lizard;
+        justify-self: center;
     }
     .rock-bonus_btn {
-        top: 65%;
-        left: 60%;
+        position: absolute;
+        top: 159px;
+        left: 119px;
+        grid-area: rock;
+        justify-self: center;
+    }
+}
+
+@media (min-width: 48rem){
+    .bonus_container {
+        background-image: url('../images/bg-pentagon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: none;
+        margin: 7.6875rem auto 0.25rem auto;
+        width: 345px;
+        height: 345px;
     }
 
-    .bonus_container::before {
-        left: 31%;
-
+    .scissors-bonus_btn {
+        position: absolute;
+        top: -102px;
+        left: 68px;
+        grid-area: sci;
+        justify-self: center;
+    }
+    .spock-bonus_btn {
+        position: absolute;
+        top: 25px;
+        left: -92px;
+        grid-area: spock;
+    }
+    .paper-bonus_btn {
+        position: absolute;
+        top: 23px;
+        left: 232px;
+        grid-area: paper;
+        justify-self: end;
+    }
+    .lizard-bonus_btn {
+        position: absolute;
+        top: 215px;
+        left: -27px;
+        grid-area: lizard;
+        justify-self: center;
+    }
+    .rock-bonus_btn {
+        position: absolute;
+        top: 215px;
+        left: 171px;
+        grid-area: rock;
+        justify-self: center;
     }
     
 }
 
-@media (max-width: 120rem) and (min-width: 64.0625rem){
-    .bonus_container::before {
+/*@media (min-width: 85.375rem){
+    /* .bonus_container::before {
         left: 27%;
 
+    } 
+    .bonus_container {
+        background-image: url('../images/bg-pentagon.svg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        position: relative;
+        display: none;
+        margin: 7.6875rem auto 0.25rem auto;
+        width: 345px;
+        height: 345px;
+    }
+
+    .scissors-bonus_btn {
+        position: absolute;
+        top: -102px;
+        left: 68px;
+        grid-area: sci;
+        justify-self: center;
+    }
+    .spock-bonus_btn {
+        position: absolute;
+        top: 25px;
+        left: -92px;
+        grid-area: spock;
+    }
+    .paper-bonus_btn {
+        position: absolute;
+        top: 23px;
+        left: 232px;
+        grid-area: paper;
+        justify-self: end;
+    }
+    .lizard-bonus_btn {
+        position: absolute;
+        top: 215px;
+        left: -27px;
+        grid-area: lizard;
+        justify-self: center;
+    }
+    .rock-bonus_btn {
+        position: absolute;
+        top: 215px;
+        left: 171px;
+        grid-area: rock;
+        justify-self: center;
     }
     
-}
+    
+}*/
 
 
 
