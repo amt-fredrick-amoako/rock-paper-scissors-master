@@ -134,18 +134,18 @@ header a{
     background: rgba(0, 0, 0, 0.5);
 }
 
-.modal{
-    display: none;
-    position: absolute;
-    z-index: 3;
-    background: #fff;
-    width: 100%;
-    max-width: 25rem;
-    border-radius: 10px;
-    top: 24%;
-    left: 37%;
-    height: 100%;
-    max-height: 25.9375rem;
+.modal {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	background: #fff;
+	width: 100%;
+	max-width: 25rem;
+	border-radius: 10px;
+	top: 24%;
+	left: 37%;
+	height: 100%;
+	max-height: 29.9rem;
 }
 
 .modal .close{
@@ -173,7 +173,7 @@ header a{
 
 .modal .content {
 	text-align: center;
-	margin-top: -50px;
+	margin-top: 0px;
 }
 
 @media (max-width: 47.9375rem) and (min-width: 23.4375rem){
@@ -224,7 +224,7 @@ header a{
 
     .buttons-container {
         position: relative;
-        margin: 6.5625rem auto 8.6875rem auto;
+        margin: 6.5625rem auto 5rem auto;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -315,7 +315,7 @@ header a{
 
     .modal .content {
         text-align: center;
-        margin-top: 0px;
+        margin-top: -50px;
     }
 
     
@@ -415,10 +415,11 @@ header a{
         width: 100%;
         max-width: 25rem;
         border-radius: 10px;
-        top: 22%;
-        left: 30%;
+        top: 50%;
+        left: 50%;
         height: 100%;
-        max-height: 25.9375rem;
+        max-height: 29.9rem;
+        transform: translate(-50%,-50%);
     }
 
     .rules {
@@ -471,19 +472,20 @@ header a{
     right: 20px;
 }
 
-    .modal {
-        display: none;
-        position: absolute;
-        z-index: 3;
-        background: #fff;
-        width: 100%;
-        max-width: 25rem;
-        border-radius: 10px;
-        top: 22.0%;
-        left: 36.1%;
-        height: 100%;
-        max-height: 25.9375rem;
-    }
+.modal {
+	display: none;
+	position: absolute;
+	z-index: 3;
+	background: #fff;
+	width: 100%;
+	max-width: 25rem;
+	border-radius: 10px;
+	top: 50%;
+	left: 50%;
+	height: 100%;
+	max-height: 29.9rem;
+	transform: translate(-50%,-50%);
+}
 }
 
 
