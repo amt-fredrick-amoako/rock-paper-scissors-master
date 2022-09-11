@@ -18,6 +18,7 @@ const modal = document.querySelector('.modal');
 const closeElement = document.querySelector('.close');
 const howToPlay = document.getElementById('how-to-play');
 const rulesTitle = document.querySelector('.title');
+const playagainEl = document.getElementById('play-again');
 
 
 const choices = ['paper', 'rock', 'scissors'];
@@ -35,17 +36,40 @@ returnScoreFromStorage();
 
 //user selection
 buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        userSelection = button.getAttribute('data-choice');
-        console.log(userSelection);
-        
-        gameMode.advanced === false && gameMode.normal === true ? checkWinner(): checkBonusWinner();
-
-
-
-    });
+	button.addEventListener('click', () => {
+	    userSelection = button.getAttribute('data-choice');
+	    console.log(userSelection);
+	        
+	    gameMode.advanced === false && gameMode.normal === true ? checkWinner(): checkBonusWinner();
+	});
 
 });
+
+const fadeIn = () => {
+    let opacity = 0;
+    let intervalID = setInterval(()=>{
+        if(opacity < 1){
+            opacity += 0.05;
+            playagainEl.style.opacity = opacity;
+        }
+        else{
+            clearInterval(intervalID);
+        }
+    }, 100);
+};
+
+const fadeOut = () => {
+    let opacity = 1.1;
+    let intervalID = setInterval(() => {
+        if(opacity > 1){
+            opacity -= 0.1;
+            playagainEl.style.opacity = opacity;
+        }
+        else{
+            clearInterval(intervalID);
+        }
+    });
+}
 
 
 //toggle between modes
@@ -86,6 +110,8 @@ const toggleMode = () => {
         gameMode.normal = false;
         bonusLevel.style.display = 'block';
         game.style.display = 'none';
+        playagainEl.style.opacity = 0;
+
 
         console.log('advanced game mode set to:' + gameMode.advanced);
         console.log('normal game mode set to: ' + gameMode.normal);
@@ -96,6 +122,8 @@ const toggleMode = () => {
         gameMode.normal = true;
         bonusLevel.style.display = 'none';
         game.style.display = 'flex';
+        playagainEl.style.opacity = 0;
+
         console.log('advanced game mode set to:' + gameMode.advanced);
         console.log('normal game mode set to: ' + gameMode.normal);
         
@@ -120,11 +148,13 @@ bonusLogo.addEventListener('click', toggleMode);
 reset.addEventListener('click', () =>{
     game.style.display = 'flex';
     play.style.display = 'none';
+    playagainEl.style.opacity = 0;
     bonusLevel.style.display = 'none';
     if(gameMode.advanced === true){
         game.style.display = 'none';
         play.style.display = 'none';
         bonusLevel.style.display = 'block';
+        playagainEl.style.opacity = 0;
     }
     
     
@@ -160,6 +190,7 @@ const checkWinner = () => {
     
     game.style.display = 'none';
     play.style.display = 'grid';
+    fadeIn();
     console.log('winner function call when game mode is normal');
 }
 
@@ -280,6 +311,8 @@ const checkBonusWinner = () => {
     bonusLevel.style.display = 'none';
     play.style.display = 'grid';
     game.style.display = 'none';
+    fadeIn();
+
     console.log('Bonus Winner function call when game mode is advanced');
     
 }
@@ -298,16 +331,19 @@ rulesButton.addEventListener('click', () => {
     }
 });
 
-closeElement.addEventListener('click', hideModal);
+function hideModal(){
+    modal.classList.remove('active');
+    modalBg.classList.remove('active');
+}
 
 modalBg.addEventListener('click', (eventTarget) => {
     eventTarget.target === modalBg ? hideModal(): null;
 })
 
-function hideModal(){
-    modal.classList.remove('active');
-    modalBg.classList.remove('active');
-}
+
+
+closeElement.addEventListener('click', hideModal);
+
 
 
 

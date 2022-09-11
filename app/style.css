@@ -101,7 +101,7 @@ header a{
 }
 
 .rules{
-    position: fixed;
+    /* position: fixed; */
     background-color: transparent;
     border: 1px solid #FFFFFF;
     border-radius: 8px;
@@ -116,6 +116,8 @@ header a{
     bottom: 2rem;
     right: 30px;
 }
+
+
 
 .modal.active, .modal-bg.active{
     display: block;
@@ -254,7 +256,7 @@ header a{
     }
 
     .rules{
-        position: fixed;
+        /* position: fixed; */
         background-color: transparent;
         border: 1px solid #FFFFFF;
         border-radius: 8px;
@@ -268,6 +270,17 @@ header a{
         text-transform: uppercase;
         bottom: 3.5rem;
         left: 7.75rem;
+    }
+
+    .rules-button{
+        
+        max-width: 100%;
+        /* height: 56px; */
+        position: relative;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        
     }
 
     .modal {
@@ -407,6 +420,24 @@ header a{
         height: 100%;
         max-height: 25.9375rem;
     }
+
+    .rules {
+        position: fixed;
+        background-color: transparent;
+        border: 1px solid #FFFFFF;
+        border-radius: 8px;
+        font-weight: 600;
+        font-size: 1rem;
+        line-height: 19px;
+        text-align: center;
+        letter-spacing: 2.5px;
+        color: #FFFFFF;
+        padding: 10px 36px;
+        text-transform: uppercase;
+        bottom: 20px;
+        right: 20px;
+    }
+    
 }
 
 
@@ -422,6 +453,23 @@ header a{
         padding: 1.125rem 1.5rem 1.125rem 2.0825rem;
         border-radius: 15px;
     }
+
+    .rules {
+    position: fixed;
+    background-color: transparent;
+    border: 1px solid #FFFFFF;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2.5px;
+    color: #FFFFFF;
+    padding: 10px 36px;
+    text-transform: uppercase;
+    bottom: 20px;
+    right: 20px;
+}
 
     .modal {
         display: none;
